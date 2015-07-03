@@ -1,0 +1,91 @@
+COSMIC STRING DISTRIBUTION PROJECT V1.0 README
+Code maintained by Jacob Balma
+Contact balm0016@d.umn.edu
+
+1. Directory and File Listing
+-----------------------------
+
+/
+
+-Documentation.pdf	A document detailing the theory, algorithm and results of the code
+
+
+/CS/
+
+-cs.cpb			A Code::Blocks project document for maintaining code
+-cs.depend		A list of file dependencies of cs
+-cs.layout		A Code::Blocks project layout
+
+-Distribution.cpp	An implementation file for Distribution class
+-Distribution.h		A class for the Distribution object
+
+-Points.cpp		An implementation file for Points class
+-Points.h		A class for the Point object
+
+-Vex.cpp		An implementation file for Vex class
+-Vex.h			A class to create Vex objects for doing Vector math
+
+-Legendre.h		Class for accessing useful math functions in boost libraries
+
+-gnuplot_i.hpp		An API for using gnuplot as an object in C++
+-kernel			Data file produced by GenerateKernel() in Points.h
+-matrix			Data file that shows the distribution function as matrix of points
+-entropy.txt		Data file for plotting entropy and energy density as functions of time
+-gmon.out		Code Profiler information
+-ValgrindOut.xml	Code Profiler output
+-lebedev_*.txt		Data file for Lebedev points used in quadrature
+
+
+/CS_Executable/
+
+-cs			Executable for the program
+
+-kernel			Data file produced by GenerateKernel() in Points.h
+-matrix			Data file produced that shows the distribution function as matrix of points
+-entropy.txt		Data file produced plotting entropy and energy density as functions of time
+-lebedev_*.txt		Data file for Lebedev points used in quadrature
+
+
+/Documentation/
+
+-*.png			Image files used in documentation
+-algorithm.lyx		Lyx file for editing LATEX documentation
+-algorithm.tex		LATEX file for documentation
+-algorithm.pdf		PDF Produced by Latex
+
+
+
+
+2. Compiling and Running
+-----------------------------
+
+This package contains code for the Cosmic String Distribution project maintained by Jacob Balma. The code is contained in the folder /cs_project/CS. A working executable of the program can be found in /cs_project/CS_Executable/cs. 
+
+It can be run by opening a terminal in the parent directory and typing:
+
+user$ /cs_project/CS_Executable/./cs 
+
+However, this version was compiled for AMD64-bit machines using Phenom II processor under Debian Linux Wheezy. If you are on a different architecture you will need to recompile using the source code found in /cs_project/CS/.
+
+Compiling requires Boost Libraries V1.49 or later, as well as gcc 4.7.2-5. Run 'sudo apt-get install build-essentials' to get most of what you need. To use the Code::Blocks project file, you must also install Code::Blocks and add the Boost libraries to your library path. 
+
+Using the Makefile, adjust the compile options CXX and CFLAGS to fit your environment. Then type make. To build with openMP support, set the flag -D__USE_OPENMP and include -fopenmp in the compile line.
+
+
+
+
+
+3. Design
+-----------------------------
+
+The code is set up as follows: 
+
+cs.cpp contains the main() for the Simulation. It's first goal is to get the number of points used, as well as the order, the step size, and the length of time to run the simulation for, from the user. Then it initializes a Distribution object. This object is where the actual model is located. 
+
+Then, cs.cpp creates lists of rotated points for use in calculating the gravitational terms. These are passed in the form of a Points object. It gets the lists of points from data files contained in /cs_project/CS/. Then, with the rotated points, number of points, step size and run-time length, it calls GenerateInitialDistribution(). This sets up the arrays for storing data as the simulation is run. The last step is to call EvolveDistribution(). This function is the actual work-horse of the program. It tells the model how long to run for, and solves the integral given in the Documentation.pdf. 
+
+The Vex objects are used to do vector math, such as dot and cross products. This improves the readability of the code. Likewise, Point objects are used to manipulate the Lebedev points, perform rotations, and produce Kernel files. See the Documentation for more information.
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="Distribution.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="103" topLine="0" />
+	</File>
+	<File name="Distribution.h" open="1" top="0" tabpos="3">
+		<Cursor position="673" topLine="0" />
+	</File>
+	<File name="Legendre.h" open="1" top="0" tabpos="8">
+		<Cursor position="2618" topLine="110" />
+	</File>
+	<File name="Points.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="4606" topLine="0" />
+	</File>
+	<File name="Points.h" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Vex.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="1030" topLine="179" />
+	</File>
+	<File name="Vex.h" open="1" top="0" tabpos="6">
+		<Cursor position="641" topLine="0" />
+	</File>
+	<File name="cs.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="493" topLine="24" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,181 @@
+# depslib dependency file v1.0
+1401406570 source:/home/anonymous/Desktop/CS/Distribution.cpp
+	"Distribution.h"
+	"gnuplot_i.hpp"
+	<random>
+	<iomanip>
+	<boost/random.hpp>
+	<boost/random/normal_distribution.hpp>
+	<sys/resource.h>
+
+1392236268 /home/anonymous/Desktop/CS/Distribution.h
+	<vector>
+	<cmath>
+	<iostream>
+	<fstream>
+	"Vex.h"
+	"Points.h"
+
+1375826305 /home/anonymous/Desktop/CS/Vex.h
+
+1374518228 /home/anonymous/Desktop/CS/Points.h
+	<vector>
+	"Vex.h"
+	<iostream>
+
+1365697896 /home/anonymous/Desktop/CS/gnuplot_i.hpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<stdexcept>
+	<cstdio>
+	<cstdlib>
+	<list>
+	<io.h>
+	<unistd.h>
+
+1400026247 source:/home/anonymous/Desktop/CS/Points.cpp
+	"Points.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+	"Vex.h"
+	<vector>
+	<iomanip>
+	"Legendre.h"
+
+1400532752 /home/anonymous/Desktop/CS/Legendre.h
+	<boost/math/special_functions/legendre.hpp>
+	<boost/math/special_functions/spherical_harmonic.hpp>
+
+1400009289 source:/home/anonymous/Desktop/CS/Vex.cpp
+	"Vex.h"
+	<cmath>
+	<iostream>
+
+1401175172 source:/home/anonymous/Desktop/CS/cs.cpp
+	<iostream>
+	"Distribution.h"
+
+1412802083 source:/home/anonymous/CS/Distribution.cpp
+	"Distribution.h"
+	"gnuplot_i.hpp"
+	<random>
+	<iomanip>
+	<boost/random.hpp>
+	<boost/random/normal_distribution.hpp>
+	<sys/resource.h>
+
+1412782852 /home/anonymous/CS/Distribution.h
+	<vector>
+	<cmath>
+	<iostream>
+	<fstream>
+	"Vex.h"
+	"Points.h"
+
+1375826305 /home/anonymous/CS/Vex.h
+
+1374518228 /home/anonymous/CS/Points.h
+	<vector>
+	"Vex.h"
+	<iostream>
+
+1365697896 /home/anonymous/CS/gnuplot_i.hpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<stdexcept>
+	<cstdio>
+	<cstdlib>
+	<list>
+	<io.h>
+	<unistd.h>
+
+1412796683 source:/home/anonymous/CS/Points.cpp
+	"Points.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+	"Vex.h"
+	<vector>
+	<iomanip>
+	"Legendre.h"
+
+1400532752 /home/anonymous/CS/Legendre.h
+	<boost/math/special_functions/legendre.hpp>
+	<boost/math/special_functions/spherical_harmonic.hpp>
+
+1412796647 source:/home/anonymous/CS/Vex.cpp
+	"Vex.h"
+	<cmath>
+	<iostream>
+
+1412796846 source:/home/anonymous/CS/cs.cpp
+	<iostream>
+	"Distribution.h"
+
+1412815163 source:/home/anonymous/Desktop/cs_project/CS/Distribution.cpp
+	"Distribution.h"
+	"gnuplot_i.hpp"
+	<random>
+	<iomanip>
+	<boost/random.hpp>
+	<boost/random/normal_distribution.hpp>
+	<sys/resource.h>
+
+1412782852 /home/anonymous/Desktop/cs_project/CS/Distribution.h
+	<vector>
+	<cmath>
+	<iostream>
+	<fstream>
+	"Vex.h"
+	"Points.h"
+
+1375826305 /home/anonymous/Desktop/cs_project/CS/Vex.h
+
+1374518228 /home/anonymous/Desktop/cs_project/CS/Points.h
+	<vector>
+	"Vex.h"
+	<iostream>
+
+1365697896 /home/anonymous/Desktop/cs_project/CS/gnuplot_i.hpp
+	<iostream>
+	<string>
+	<vector>
+	<fstream>
+	<sstream>
+	<stdexcept>
+	<cstdio>
+	<cstdlib>
+	<list>
+	<io.h>
+	<unistd.h>
+
+1412796683 source:/home/anonymous/Desktop/cs_project/CS/Points.cpp
+	"Points.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+	"Vex.h"
+	<vector>
+	<iomanip>
+	"Legendre.h"
+
+1400532752 /home/anonymous/Desktop/cs_project/CS/Legendre.h
+	<boost/math/special_functions/legendre.hpp>
+	<boost/math/special_functions/spherical_harmonic.hpp>
+
+1412796647 source:/home/anonymous/Desktop/cs_project/CS/Vex.cpp
+	"Vex.h"
+	<cmath>
+	<iostream>
+
+1412814828 source:/home/anonymous/Desktop/cs_project/CS/cs.cpp
+	<iostream>
+	"Distribution.h"
+

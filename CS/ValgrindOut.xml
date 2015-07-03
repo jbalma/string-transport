@@ -1,0 +1,1241 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: bin/Debug/cs </line>
+</preamble>
+
+<pid>6679</pid>
+<ppid>6492</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp</arg>
+    <arg>--leak-check=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>bin/Debug/cs</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.156 </time>
+</status>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x40574A</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>main</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>cs.cpp</file>
+      <line>68</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x405752</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>main</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>cs.cpp</file>
+      <line>75</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x40571A</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>main</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>cs.cpp</file>
+      <line>63</line>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:02:31.380 </time>
+</status>
+
+<error>
+  <unique>0x6a49e6</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>4 bytes in 1 blocks are possibly lost in loss record 1 of 814</text>
+    <leakedbytes>4</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52D9E8A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C457A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C7905</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a49e7</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>4 bytes in 1 blocks are possibly lost in loss record 2 of 814</text>
+    <leakedbytes>4</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52D9E8A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C457A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C78BD</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a49fd</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 24 of 814</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C40E0</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C7905</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+    <frame>
+      <ip>0x6E776F6E6B6E753C</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a49fe</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 25 of 814</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C40E0</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C78BD</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+    <frame>
+      <ip>0x6E776F6E6B6E753C</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4a99</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>26 bytes in 1 blocks are possibly lost in loss record 180 of 814</text>
+    <leakedbytes>26</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x407712C</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_operations.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/./boost/filesystem/v3</dir>
+      <file>path.hpp</file>
+      <line>146</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4a9a</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>26 bytes in 1 blocks are possibly lost in loss record 181 of 814</text>
+    <leakedbytes>26</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x407952C</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_path.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/./boost/filesystem/v3</dir>
+      <file>path.hpp</file>
+      <line>146</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4aa3</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>27 bytes in 1 blocks are possibly lost in loss record 190 of 814</text>
+    <leakedbytes>27</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4077161</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_operations.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/./boost/filesystem/v3</dir>
+      <file>path.hpp</file>
+      <line>146</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4aa4</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>27 bytes in 1 blocks are possibly lost in loss record 191 of 814</text>
+    <leakedbytes>27</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4079561</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_path.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/./boost/filesystem/v3</dir>
+      <file>path.hpp</file>
+      <line>146</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4abb</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>28 bytes in 1 blocks are possibly lost in loss record 214 of 814</text>
+    <leakedbytes>28</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x40555B</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>_GLOBAL__sub_I__ZN7Gnuplot11tmpfile_numE</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>gnuplot_i.hpp</file>
+      <line>603</line>
+    </frame>
+    <frame>
+      <ip>0x4230EC</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>__libc_csu_init</fn>
+    </frame>
+    <frame>
+      <ip>0x832FE3F</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.13.so</obj>
+      <fn>(below main)</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/csu</dir>
+      <file>libc-start.c</file>
+      <line>203</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4bbb</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>32 bytes in 1 blocks are possibly lost in loss record 470 of 814</text>
+    <leakedbytes>32</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x40550D</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>_GLOBAL__sub_I__ZN7Gnuplot11tmpfile_numE</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>gnuplot_i.hpp</file>
+      <line>596</line>
+    </frame>
+    <frame>
+      <ip>0x4230EC</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>__libc_csu_init</fn>
+    </frame>
+    <frame>
+      <ip>0x832FE3F</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.13.so</obj>
+      <fn>(below main)</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/csu</dir>
+      <file>libc-start.c</file>
+      <line>203</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4be9</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>40 bytes in 1 blocks are possibly lost in loss record 516 of 814</text>
+    <leakedbytes>40</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x405534</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>_GLOBAL__sub_I__ZN7Gnuplot11tmpfile_numE</fn>
+      <dir>/home/anonymous/Desktop/CS</dir>
+      <file>gnuplot_i.hpp</file>
+      <line>597</line>
+    </frame>
+    <frame>
+      <ip>0x4230EC</ip>
+      <obj>/home/anonymous/Desktop/CS/bin/Debug/cs</obj>
+      <fn>__libc_csu_init</fn>
+    </frame>
+    <frame>
+      <ip>0x832FE3F</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.13.so</obj>
+      <fn>(below main)</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/csu</dir>
+      <file>libc-start.c</file>
+      <line>203</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4cc3</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>64 bytes in 1 blocks are possibly lost in loss record 734 of 814</text>
+    <leakedbytes>64</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C3349C</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4070E51</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_v2_portability.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/libs/filesystem/v2/src</dir>
+      <file>v2_portability.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4cc4</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>64 bytes in 1 blocks are possibly lost in loss record 735 of 814</text>
+    <leakedbytes>64</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C3349C</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4079821</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_portability.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/libs/filesystem/v3/src</dir>
+      <file>portability.cpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4ce7</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>90 bytes in 1 blocks are possibly lost in loss record 770 of 814</text>
+    <leakedbytes>90</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4070E86</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_v2_portability.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/libs/filesystem/v2/src</dir>
+      <file>v2_portability.cpp</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4ce8</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>90 bytes in 1 blocks are possibly lost in loss record 771 of 814</text>
+    <leakedbytes>90</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C286E7</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>287</line>
+    </frame>
+    <frame>
+      <ip>0x7C31998</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33384</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x7C33462</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4079856</ip>
+      <obj>/usr/lib/libboost_filesystem.so.1.49.0</obj>
+      <fn>_GLOBAL__sub_I_portability.cpp</fn>
+      <dir>/build/other/boost1.49-1.49.0/libs/filesystem/v3/src</dir>
+      <file>portability.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x400DF7F</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>call_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x400E076</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+      <fn>_dl_init</fn>
+      <dir>/home/aurel32/eglibc/eglibc-2.13/elf</dir>
+      <file>dl-init.c</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4000B29</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.13.so</obj>
+    </frame>
+    <frame>
+      <ip>0x1</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004EE</ip>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4cea</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>104 bytes in 1 blocks are possibly lost in loss record 773 of 814</text>
+    <leakedbytes>104</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4567</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C7905</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+    <frame>
+      <ip>0x6E776F6E6B6E753C</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6a4ceb</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>104 bytes in 1 blocks are possibly lost in loss record 774 of 814</text>
+    <leakedbytes>104</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C28BED</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/tmp/buildd/valgrind-3.7.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>263</line>
+    </frame>
+    <frame>
+      <ip>0x676F06C</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x676F188</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4567</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C4690</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x52C78BD</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x677D5E5</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x51AD28A</ip>
+      <obj>/opt/AMDAPP/lib/x86_64/libamdocl64.so</obj>
+    </frame>
+    <frame>
+      <ip>0x7FF0004FB</ip>
+    </frame>
+    <frame>
+      <ip>0x4E56000073632F66</ip>
+    </frame>
+    <frame>
+      <ip>0x504F544B53454442</ip>
+    </frame>
+    <frame>
+      <ip>0x6E776F6E6B6E753C</ip>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>2321910</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>2321910</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>2321910</count>
+    <unique>0x4</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+  <pair>
+    <count>4</count>
+    <name>dl-hack3-cond-1</name>
+  </pair>
+</suppcounts>
+
+</valgrindoutput>
+
